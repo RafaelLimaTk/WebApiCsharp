@@ -24,7 +24,7 @@ public class ProductRepository : IProductRepository
     }
     public async Task<ProductVO> FindById(long id)
     {
-        Product product = 
+        Product product =
             await _context.Products.Where(p => p.Id == id)
             .FirstOrDefaultAsync();
         return _mapper.Map<ProductVO>(product);
@@ -57,7 +57,7 @@ public class ProductRepository : IProductRepository
             await _context.SaveChangesAsync();
             return true;
         }
-        catch (Exception ex)
+        catch (Exception)
         {
             return false;
         }
