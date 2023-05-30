@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "De8ebrUaCe2xcsGlsJE7jPhH0Fc2X5ozwfkarrEfwOA=",
+  "Hash": "+wMwGFhkdpdsRpN1CJk2Zcy/jRtVUKDST2u/Rt5X2Eo=",
   "Source": "GeekShopping.web",
   "BasePath": "_content/GeekShopping.web",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "D:\\Wookspace\\WebApiCsharp\\GeekShooping\\GeekShopping.web\\wwwroot\\images\\Imagem.png",
+      "SourceId": "GeekShopping.web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Wookspace\\WebApiCsharp\\GeekShooping\\GeekShopping.web\\wwwroot\\",
+      "BasePath": "_content/GeekShopping.web",
+      "RelativePath": "images/Imagem.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Imagem.png"
     },
     {
       "Identity": "D:\\Wookspace\\WebApiCsharp\\GeekShooping\\GeekShopping.web\\wwwroot\\js\\site.js",

@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "D:\\Wookspace\\WebApiCsharp\\GeekShooping\\GeekShopping.web\\wwwroot\\images\\Imagem.png",
+      "PackagePath": "staticwebassets\\images\\Imagem.png"
+    },
+    {
       "Id": "D:\\Wookspace\\WebApiCsharp\\GeekShooping\\GeekShopping.web\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
