@@ -29,4 +29,3 @@ D:\Wookspace\WebApiCsharp\GeekShooping\GeekShopping.web\obj\Debug\net6.0\refint\
 D:\Wookspace\WebApiCsharp\GeekShooping\GeekShopping.web\obj\Debug\net6.0\GeekShopping.web.pdb
 D:\Wookspace\WebApiCsharp\GeekShooping\GeekShopping.web\obj\Debug\net6.0\GeekShopping.web.genruntimeconfig.cache
 D:\Wookspace\WebApiCsharp\GeekShooping\GeekShopping.web\obj\Debug\net6.0\ref\GeekShopping.web.dll
-D:\Wookspace\WebApiCsharp\GeekShooping\GeekShopping.web\bin\Debug\net6.0\Views\Product\ProductIndex.cshtml

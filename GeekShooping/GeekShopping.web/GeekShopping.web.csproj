@@ -7,9 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Update="Views\Product\ProductIndex.cshtml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
+    <Compile Remove="Views\Produto\**" />
+    <Content Remove="Views\Produto\**" />
+    <EmbeddedResource Remove="Views\Produto\**" />
+    <None Remove="Views\Produto\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\Produto.cs" />
   </ItemGroup>
 
 </Project>
