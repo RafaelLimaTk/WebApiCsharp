@@ -16,3 +16,27 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.nav-link {
+    color: #495057;
+}
+
+.nav-link:hover{
+    color: #ADB5BD;
+}
+
+.nav-link.active {
+    background-color: #6C757D !important;
+}
+
+.btn-style {
+    color: #FFF;
+    background: #6C757D;
+    border: none;
+}
+
+.btn-style:hover {
+    color: #FFF;
+    background: #495057;
+    border: none;
+}

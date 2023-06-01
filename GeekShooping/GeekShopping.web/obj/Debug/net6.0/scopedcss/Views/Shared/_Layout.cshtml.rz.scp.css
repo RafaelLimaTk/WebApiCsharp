@@ -46,3 +46,12 @@ button.accept-policy[b-8r7r8r3hab] {
   white-space: nowrap;
   line-height: 60px;
 }
+
+@media (max-width: 576px) {
+    .navbar-toggler[b-8r7r8r3hab] {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+}
+
