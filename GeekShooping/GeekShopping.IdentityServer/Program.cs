@@ -1,3 +1,4 @@
+using GeekShopping.IdentityServer.Initializer;
 using GeekShopping.IdentityServer.Model;
 using GeekShopping.IdentityServer.Model.Context;
 using GeekShopping.IdentityServer.Models.Configuration;
@@ -31,7 +32,11 @@ namespace GeekShopping.IdentityServer
                     options.Events.RaiseSuccessEvents = true;
                     options.EmitStaticAudienceClaim = true;
                 }).AddInMemoryIdentityResources(IdentityConfiguration.IdentityResources)
-                .AddInMemoryClients(IdentityConfiguration.Clients).AddAspNetIdentity<ApplicationUser>();
+                    .AddInMemoryApiScopes(IdentityConfiguration.ApiScopes)
+                    .AddInMemoryClients(IdentityConfiguration.Clients)
+                    .AddAspNetIdentity<ApplicationUser>();
+
+            builder.Services.AddScoped<IDbInitializer, DbInitializer>();
 
             builderServices.AddDeveloperSigningCredential();
 
@@ -39,11 +44,16 @@ namespace GeekShopping.IdentityServer
 
             var app = builder.Build();
 
+            var initializer = app.Services.CreateScope().ServiceProvider.GetService<IDbInitializer>();
+
             // Configure the HTTP request pipeline.
             if (!app.Environment.IsDevelopment())
             {
                 app.UseExceptionHandler("/Home/Error");
             }
+
+            app.UseHttpsRedirection();
+
             app.UseStaticFiles();
 
             app.UseRouting();
@@ -51,6 +61,8 @@ namespace GeekShopping.IdentityServer
             app.UseIdentityServer();
 
             app.UseAuthorization();
+
+            initializer.Initialize();
 
             app.MapControllerRoute(
                 name: "default",
